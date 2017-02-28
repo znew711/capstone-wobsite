@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>No Sidebar - Strongly Typed by HTML5 UP</title>
+		<title>LUMBERJACK</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -28,31 +28,38 @@
 				</div>
 
 			<!-- Main -->
-				<div id="main-wrapper">
-					<div id="main" class="container">
-						<div id="content">
+				<div id="features-wrapper">
+					<div id="features" class="container">
+					  <header>
+						  <h2>Pentesting on a Physical Level</h2>
+					  </header>
 
-							<!-- Post -->
-								<article class="box post">
-									<header>
-										<h2>Behold! This is the <strong>no sidebar</strong> layout<br />
-										with no sidebar at all!</h2>
-									</header>
-									<span class="image featured"><img src="images/logs.png" alt="" /></span>
+							<span class="image featured"><img src="images/logs.png" alt="" /></span>
 									<h2>Concept</h2>
 										<p>Lumberjack is a keylogger that utilizes accelerometer data to recognize and record keystrokes on any keyboard. Small and discreet acceleration sensor undertneath a keyboard send data to a seemingly innocuous receiver plugged into the wall. This processor will use sophisticated machine learning and natural language processing to output keystrokes and complete sentences.</p>
 
 									<h2>Motivation</h2>
 										<p> 2 be sneaky </p>
+						</div>
+					</div>
 
+					<div id="main-wrapper">
+						<div id="main" class="container">		
+							<div class="row">
+							<div id="content">
+									<article class ="box post">
+									<header>
 									<h2>Competitive Analysis</h2>
+									</header>
 									<h3>Commercial USB Keyloggers</h3>
 									<p>USB keyloggers can only be used with USB keyboards, while Lumberjack can be used with any keyboard, including a laptop. Furthermore, an accelerometer pad hidden under a laptop is more subtle, and less likely to be detected by an uninformed user, than a USB connected device. Finally, many keyloggers simply store the keystrokes to the device itself, and it must be physically retrieved. Lumberjack will feature streaming of the keystrokes, and thus will never need to be physically retrieved and will allow the typed words to be viewed in real time (with some delay).</p>
 									<h3>Acoustic Data Based Keyloggers</h3>
 									<p>Unlike acoustic keyloggers, our product could be used in a variety of settings, including commonly noisy ones. Accelerometer data is prone to less outside interference, and its accuracy should have little variance based on location. </p>
 									<h3>Phone Gyroscope Based Keyloggers</h3>
 									<p>Lumberjack's data will come from directly beneath the keyboard rather than from a nearby phone, and thus will have better accuracy of detected keystrokes.</p>
+									</article>
 
+									<article class = "box post">
 									<h2>Requirements</h2>
 									<ol>
 										<li>The system shall consist of acceleration sensors and a data processing receiver.</li>
@@ -67,6 +74,9 @@
 										<li>The system should provide 80% accuracy when all components are fully functioning.</li>
 										<li>The system shall be durable to failures of at most three acceleration sensors and should continue providing 60% accuracy with only one functioning sensor.</li>
 									</ol>
+									</article>
+
+									<article class="box post">
 									<h2>Components</h2>
 									<table>
 										<thead><td>Quantity</td><td>Part Name</td><td>Use</td></thead>
@@ -85,7 +95,7 @@
 											</tr>
 											<tr><td></td>
 												<td></td>
-												<td>Power source 1/td>
+												<td>Power source 1</td>
 											</tr>
 											<tr><td></td>
 												<td></td>
@@ -93,22 +103,22 @@
 											</tr>
 										</tbody>
 									</table>
-								</article>
-
+									</article>
+								</div>
 						</div>
 					</div>
 				</div>
 
-			<div class="main-wrapper">
-					<div id="highlights" class="container">
-					<h2>The Team</h2>
-					<!--</div>
-					<div id="highlights" class="container">-->
-						<div class="row 150%">
+			<div id="features-wrapper">
+					<section id="features" class="container">
+					<header>
+						<h2>The Team</h2>
+					</header>
+					<div class="row">
 						<div class="3u 12u(mobile)">
-								<section class="highlight">
+								<section>
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3>Nick Kosarek</h3>
+									<header><h3>Nick Kosarek</h3></header>
 									<p><b>Hardware & UI designer</b></p>
 									<ul>
 													<li>Little Jazz Boy</li>
@@ -154,7 +164,7 @@
 								</section>
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
 
 
