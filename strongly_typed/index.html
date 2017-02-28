@@ -39,11 +39,35 @@
 										with no sidebar at all!</h2>
 									</header>
 									<span class="image featured"><img src="images/logs.png" alt="" /></span>
-									<h2>Concepts Section</h2>
-									<h2>Competitive Section</h2>
-									<h2>Motivation Section</h2>
-									<h2>Requirements Section</h2>
-									<h2>Components Section</h2>
+									<h2>Concept</h2>
+										<p>Lumberjack is a keylogger that utilizes accelerometer data to recognize and record keystrokes on any keyboard. Small and discreet acceleration sensor undertneath a keyboard send data to a seemingly innocuous receiver plugged into the wall. This processor will use sophisticated machine learning and natural language processing to output keystrokes and complete sentences.</p>
+
+									<h2>Motivation</h2>
+										<p> 2 be sneaky </p>
+
+									<h2>Competitive Analysis</h2>
+									<h3>Commercial USB Keyloggers</h3>
+									<p>USB keyloggers can only be used with USB keyboards, while Lumberjack can be used with any keyboard, including a laptop. Furthermore, an accelerometer pad hidden under a laptop is more subtle, and less likely to be detected by an uninformed user, than a USB connected device. Finally, many keyloggers simply store the keystrokes to the device itself, and it must be physically retrieved. Lumberjack will feature streaming of the keystrokes, and thus will never need to be physically retrieved and will allow the typed words to be viewed in real time (with some delay).</p>
+									<h3>Acoustic Data Based Keyloggers</h3>
+									<p>Unlike acoustic keyloggers, our product could be used in a variety of settings, including commonly noisy ones. Accelerometer data is prone to less outside interference, and its accuracy should have little variance based on location. </p>
+									<h3>Phone Gyroscope Based Keyloggers</h3>
+									<p>Lumberjack's data will come from directly beneath the keyboard rather than from a nearby phone, and thus will have better accuracy of detected keystrokes.</p>
+
+									<h2>Requirements</h2>
+									<ol>
+										<li>The system shall consist of acceleration sensors and a data processing receiver.</li>
+										<li>The acceleration sensor units shall collect acceleration data from key presses on the keyboard they are placed on.</li>
+										<li>The acceleration sensor units shall communicate their gathered data to the data processing receiver using Bluetooth low energy.</li>
+										<li>Each acceleration sensor unit shall be powered by a lithium ion battery and should remain in operation for over 3 months.</li>
+										<li>The data processing receiver shall use machine learning algorithms to link the accelerometer data to specific keystrokes.</li>
+										<li>The data processing receiver shall use language processing algorithms to further refine accuracy of the inferred keystrokes. </li>
+										<li>The data processing receiver shall gather text and create files that can be transferred via WiFi.</li>
+										<li>The data processing receiver shall be powered by a typical wall outlet at 120 volts.</li>
+										<li>The keystroke data files shall be stored in a virtual file system and shall be retrievable via a web interface or mobile app.</li>
+										<li>The system should provide 80% accuracy when all components are fully functioning.</li>
+										<li>The system shall be durable to failures of at most three acceleration sensors and should continue providing 60% accuracy with only one functioning sensor.</li>
+									</ol>
+									<h2>Components</h2>
 									<table>
 										<thead><td>Quantity</td><td>Part Name</td><td>Use</td></thead>
 										<tbody>
@@ -61,14 +85,14 @@
 											</tr>
 											<tr><td></td>
 												<td></td>
-												<td>Power source 1</td>
+												<td>Power source 1/td>
 											</tr>
 											<tr><td></td>
 												<td></td>
 												<td>Power source 2</td>
 											</tr>
 										</tbody>
-									</table>	
+									</table>
 								</article>
 
 						</div>
