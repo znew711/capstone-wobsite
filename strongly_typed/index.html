@@ -22,7 +22,7 @@
 
 						<!-- Logo -->
 							<h1 id="logo"><a href="index.html">Lumberjack</a></h1>
-							<p>We Know What You Typed Last Summer.</p>
+							<p>A Physical Pentesting Tool for the Future</p>
 
 					</div>
 				</div>
@@ -31,15 +31,16 @@
 				<div id="features-wrapper">
 					<div id="features" class="container">
 					  <header>
-						  <h2>Pentesting on a Physical Level</h2>
+						  <h2>WE KNOW WHAT YOU TYPED LAST SUMMER</h2>
 					  </header>
 
 							<span class="image featured"><img src="images/logs.png" alt="" /></span>
-									<h2>Concept</h2>
+									<h2>Meet Lumberjack.</h2>
 										<p>Lumberjack is a keylogger that utilizes accelerometer data to recognize and record keystrokes on any keyboard. Small and discreet acceleration sensor undertneath a keyboard send data to a seemingly innocuous receiver plugged into the wall. This processor will use sophisticated machine learning and natural language processing to output keystrokes and complete sentences.</p>
 
-									<h2>Motivation</h2>
-										<p> 2 be sneaky </p>
+									<h2>Why?</h2>
+										<p>In the new age of startups and Silicon Valley entrepreneuring, security is paramount. Pentesters and security contractors make enormous sums of money training employees to avoid phishing, to use secure passwords, and to enforce secure coding practices. However, the idea of physical security is much less emphasized, especially in smaller organizations. Lumberjack attempts to highlight potential physical security flaws and is a tool that thorough pentesters can use to emphasize the idea of physical security. By including physical hardware in our product, we hope that pentesters will be able to get physical access to key machines in an organization to collect all keystrokes at that machine in an undetected manner. This product is incredibly valuable for infiltrating airgapped machines and for gaining initial access to secure networks that sophisticated software-based keyloggers may not be able to infiltrate. Lumberjack's innocuity is an ideal tool for pentesters to teach the value of physical awareness and knowledge of one's surroundings.</p>
+										<p>Our eventual goal is to create a counterdefense for Lumberjack that can defeat the accelerometer-based data collection. Creating some program or device that can disrupt the accelerometers via RF signal when one is typing has a major potential as a standard issue for high-security systems. Creating a wireless jammer as a possible method for defeating the system will be an important step to highlighting physical security in all organizations.</p>
 						</div>
 					</div>
 
@@ -52,17 +53,17 @@
 									<h2>Competitive Analysis</h2>
 									</header>
 									<h3>Commercial USB Keyloggers</h3>
-									<p>USB keyloggers can only be used with USB keyboards, while Lumberjack can be used with any keyboard, including a laptop. Furthermore, an accelerometer pad hidden under a laptop is more subtle, and less likely to be detected by an uninformed user, than a USB connected device. Finally, many keyloggers simply store the keystrokes to the device itself, and it must be physically retrieved. Lumberjack will feature streaming of the keystrokes, and thus will never need to be physically retrieved and will allow the typed words to be viewed in real time (with some delay).</p>
-									<h3>Acoustic Data Based Keyloggers</h3>
-									<p>Unlike acoustic keyloggers, our product could be used in a variety of settings, including commonly noisy ones. Accelerometer data is prone to less outside interference, and its accuracy should have little variance based on location. </p>
+									<p>USB keyloggers can only be used with USB keyboards, while Lumberjack can be used with any keyboard, including a laptop. Furthermore, an accelerometer pad hidden under a laptop is more subtle and less likely to be detected by an uninformed user, compared to a USB-connected device. Finally, many keyloggers simply store the keystrokes to the device itself, and the device must be physically retrieved. Lumberjack will feature streaming of the keystrokes, utilizing Wi-Fi and a virtual file system to enable remote access of the keystroke data. Thus, Lumberjack will never need to be physically retrieved and will allow the keystrokes to be viewed in near-real time.</p>
+									<h3>Acoustic Data Based Keyloggers</h3> 
+									<p>Much research has been conducted on keyloggers that utilize acoustic data, using the differing tones of keystrokes to classify which key is being pressed. Unlike acoustic keyloggers, our product could be used in a variety of settings, including commonly noisy ones. Accelerometer data is prone to less outside interference, and its accuracy should have little variance based on location. </p>
 									<h3>Phone Gyroscope Based Keyloggers</h3>
-									<p>Lumberjack's data will come from directly beneath the keyboard rather than from a nearby phone, and thus will have better accuracy of detected keystrokes.</p>
+									<p>In 2011, researchers at Georgia Tech published preliminary research showing how a hijacked phone sitting near a keyboard could pick up distinct keystrokes using the phone's accelerometer. The researchers were able to get an impressive 80% accuracy just by using an iPhone several inches away. Lumberjack's data will come from directly beneath the keyboard rather than from a nearby phone and thus will have better accuracy of detected keystrokes. Plus, by bypassing the need for a phone, an attacker or pentester need not create a rootkit for the phone of their target. One only needs physical access once in order to begin collecting accurate keystroke data.</p>
 									</article>
 
 									<article class = "box post">
 									<h2>Requirements</h2>
 									<ol>
-										<li>The system shall consist of acceleration sensors and a data processing receiver.</li>
+										<li>The system shall consist of 4 acceleration sensors and a data processing receiver.</li>
 										<li>The acceleration sensor units shall collect acceleration data from key presses on the keyboard they are placed on.</li>
 										<li>The acceleration sensor units shall communicate their gathered data to the data processing receiver using Bluetooth low energy.</li>
 										<li>Each acceleration sensor unit shall be powered by a lithium ion battery and should remain in operation for over 3 months.</li>
@@ -71,7 +72,7 @@
 										<li>The data processing receiver shall gather text and create files that can be transferred via WiFi.</li>
 										<li>The data processing receiver shall be powered by a typical wall outlet at 120 volts.</li>
 										<li>The keystroke data files shall be stored in a virtual file system and shall be retrievable via a web interface or mobile app.</li>
-										<li>The system should provide 80% accuracy when all components are fully functioning.</li>
+										<li>The system should provide over 80% accuracy when all components are fully functioning.</li>
 										<li>The system shall be durable to failures of at most three acceleration sensors and should continue providing 60% accuracy with only one functioning sensor.</li>
 									</ol>
 									</article>
@@ -79,27 +80,27 @@
 									<article class="box post">
 									<h2>Components</h2>
 									<table>
-										<thead><td>Quantity</td><td>Part Name</td><td>Use</td></thead>
+										<thead><td><b>Quantity</b></td><td><b>Part Name</b></td><td><b>Use</b></td></thead>
 										<tbody>
 											<tr><td>4</td>
 												<td>LIS331HH</td>
-												<td>Accelerometers</td>
+												<td>Accelerometers: ultra low power with 16-bit output</td>
 											</tr>
 											<tr><td>1</td>
-												<td>nRF51822</td>
-												<td>BLE chip</td>
+												<td>RedBearLabs nRF51822</td>
+												<td>Bluetooth Low-Energy chip: for sending data from the accelerometers</td>
 											</tr>
 											<tr><td>1</td>
-												<td>nRF52832</td>
-												<td>Microprocessor</td>
+												<td>Nordic Semiconductor nRF52832</td>
+												<td>Microprocessor: with Bluetooth Low-Energy receiver, DSP capabilities, and 2.4 GHz communication</td>
 											</tr>
-											<tr><td></td>
-												<td></td>
-												<td>Power source 1</td>
+											<tr><td>4</td>
+												<td>SparkFun PRT-13851 Lithium-Ion Battery</td>
+												<td>Power source for the accelerometers</td>
 											</tr>
-											<tr><td></td>
-												<td></td>
-												<td>Power source 2</td>
+											<tr><td>1</td>
+												<td>SparkFun TOL-12889 Wall Adapter Power Supply</td>
+												<td>Power source for the wall-mounted box</td>
 											</tr>
 										</tbody>
 									</table>
@@ -119,11 +120,11 @@
 								<section>
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 									<header><h3>Nick Kosarek</h3></header>
-									<p><b>Hardware & UI designer</b></p>
+									<p><b>Hardware & UI Designer</b></p>
 									<ul>
 													<li>Little Jazz Boy</li>
-													<li>Never spoils Game of Thrones</li>
-													<li>No Chicago accent</li>
+													<li>never spoils Game of Thrones</li>
+													<li>no Chicago accent</li>
 									</ul>
 								 </section>
 						</div>	
@@ -131,11 +132,11 @@
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 									<h3>Zach Newman</h3>
-									<p><b>Bluetooth LE expert</b></p>
+									<p><b>Bluetooth LE Expert</b></p>
 									<ul>
-													<li>Try Hard.</li>
-													<li>Overly fond of Goats</li>
-													<li>Has never read Twilight</li>
+													<li>Try Hard</li>
+													<li>overly fond of goats</li>
+													<li>has never read Twilight</li>
 									</ul>
 								</section>
 							</div>
@@ -143,7 +144,7 @@
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 									<h3>Cortney Padua</h3>
-									<p><b>Firmware designer</b></p>
+									<p><b>Firmware Designer</b></p>
 									<ul>
 													<li>likes fuzzy stuff</li>
 													<li>always wears that purple color</li>
@@ -155,11 +156,11 @@
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 									<h3>Kiran Pandit</h3>
-									<p><b>Machine learning expert</b></p>	
+									<p><b>Machine Learning Expert</b></p>	
 									<ul>
-													<li>Killing the fitbit game</li>
-													<li>Confused about the rules of Rugby</li>
-													<li>Hates the word "Ointment"</li>
+													<li>killing the Fitbit game</li>
+													<li>confused about the rules of Rugby</li>
+													<li>hates the word "Ointment"</li>
 									</ul>
 								</section>
 							</div>
@@ -170,7 +171,7 @@
 
 				<div id="copyright" class="container">
 						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Lumberjack. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 				</div>
